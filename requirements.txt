@@ -1,4 +1,4 @@
 Flask>=2.0
-jobspy>=0.1  # Replace with the actual version if known
+python-jobspy
 pandas>=1.0
 gunicorn
