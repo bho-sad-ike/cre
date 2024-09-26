@@ -36,6 +36,20 @@
     </nav>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <div class="mb-4 flex flex-wrap items-center gap-4">
+           
+        
+            <span class="text-gray-600">Results:</span>
+            <select id="resultsWanted" name="results_wanted" class="border rounded-md px-2 py-1">
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            <button id="clearFilters" class="text-blue-600 hover:text-blue-800">Clear All</button>
+        </div>
+
+
         <div class="bg-white shadow-md rounded-lg p-6 mb-8">
             <form id="searchForm" method="POST" class="flex flex-col md:flex-row gap-4">
                 <div class="flex-grow">
@@ -54,28 +68,7 @@
             </form>
         </div>
 
-        <div class="mb-4 flex flex-wrap items-center gap-4">
-            <span class="text-gray-600">Sort by:</span>
-            <select id="sortBy" name="sort_by" class="border rounded-md px-2 py-1">
-                <option value="relevance">Relevance</option>
-                <option value="date">Date</option>
-                <option value="salary">Salary</option>
-            </select>
-            <span class="text-gray-600">Type:</span>
-            <select id="jobType" name="job_type" class="border rounded-md px-2 py-1">
-                <option value="all">All</option>
-                <option value="full-time">Full-time</option>
-                <option value="part-time">Part-time</option>
-                <option value="contract">Contract</option>
-            </select>
-            <span class="text-gray-600">Results:</span>
-            <select id="resultsWanted" name="results_wanted" class="border rounded-md px-2 py-1">
-                <option value="20">20</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-            </select>
-            <button id="clearFilters" class="text-blue-600 hover:text-blue-800">Clear All</button>
-        </div>
+       
 
         {% if error %}
         <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
